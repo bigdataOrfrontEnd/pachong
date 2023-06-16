@@ -16,6 +16,7 @@ function filter(data) {
 
   var temp_title = [];
   temp_div.each(function (index, item) {
+    // 将获取到的页面中的标题放入到数组中,只能抓取到页面的静态信息
     temp_title.push($(item).find("h3").text());
     console.log(temp_title);
   });
